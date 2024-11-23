@@ -1,5 +1,7 @@
 # Search-by-SMILES
-Search by SMILES across the Excel sheet (RDKit)
+
+**Search-by-SMILES** is a Python script leveraging **RDKit** and **Pandas** libraries to search for specific molecular patterns in a dataset. The workflow begins by importing an Excel sheet containing molecular data, which is then converted into a CSV format for easier manipulation. SMILES strings in the dataset are processed to create molecular objects using RDKit. Users can input a query SMILES string to search for specific substructures within the molecules. Matches are highlighted, visualized as a grid of molecule images, and saved to a specified directory. The tool is ideal for cheminformatics tasks requiring substructure searching and SMILES visualization.
+
 
 1. Import Panda and RDKit libraries
 ```
@@ -14,7 +16,7 @@ from rdkit.Chem import rdMolDescriptors
 from io import StringIO
 ```
 
-2. Input Excel sheet directory, and 
+2. Input Excel sheet directory
 ```
 input_xlsx = input("Enter the directory of the Excel sheet: ")
 data_df = pd.read_excel(input_xlsx)
