@@ -1,4 +1,4 @@
-# Search-by-SMILES-across-the-excel-sheet
+# Search-by-SMILES
 Search by SMILES across the Excel sheet (RDKit)
 
 1. Import Panda and RDKit libraries
